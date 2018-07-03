@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CallBack</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var food=['Burger','Pasta','Coke'];
+			function prepareFood(tableNumber,items,CallBack) {
+				console.log(food);
+				CallBack();
+			}
+			function serveFood(tableNumber,items) {
+				console.log(food);
+			}
+			prepareFood(1,3,serveFood);
+		</script>
+	</body>
+</html>
